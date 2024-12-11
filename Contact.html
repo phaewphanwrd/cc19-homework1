@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        :root {
+            --main-color: rgb(156, 156, 156);
+            --second-color: rgb(119, 119, 119);;
+            --third-color: #f9fdf2;
+            --fourth--color: rgb(112, 158, 101);
+        }
+
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 10px 10px;
+
+        }
+
+        a{
+            text-decoration: none;
+            color:var(--fourth--color);
+        }
+
+        hr{
+            border: 0.5px solid var(--fourth--color);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h2{
+            color: var(--second-color);
+        }
+
+        form{
+            border-radius: 8px;
+            border: 1px solid gray;
+            width: 500px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            padding: 50px;
+            
+        }
+        input{
+            max-width: 80%;
+            border: 1px solid gray;
+            height: 30px;
+            margin-bottom: 30px;
+        }
+        textarea{
+            height: 200px;
+            max-width: 80%;
+        }
+        select{
+            max-width: 82%;
+            height: 30px;
+            margin-bottom: 30px;
+            background-color: transparent;
+            
+        }
+        .button{
+            margin-top: 10px;
+            font-size: 14px;
+            padding: 3px 9px;
+            max-width: 70px;
+            background-color: var(--fifth--color);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Home.html">Home</a> |
+        <a href="Education.html">Education</a> |
+        <a href="Work.html">Work Experience</a> |
+        <a href="#">Contact Me</a> |
+    </nav>
+    <hr />
+    
+    
+
+    <div class="container">
+        <h2>Contact Me</h2>
+    
+    <form action="">
+        <p>Enter your info.</p>
+        <label for="yname">Your Name</label>
+        <input type="text" required>
+        <label for="yemail">Your Email</label>
+        <input type="email" name="yemail" id="yemail" required>
+        <label for="">Gender</label>
+        <select name="gender" id="gender" >
+            <option value="">Select..</option>
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">LGBTQ</option>
+            <option value="">Prefer not to say</option>
+        </select>
+        <label for="">Message</label>
+        <textarea></textarea>
+        <div>
+        <input class="button" type="submit" name="send" id="send" value="Send">
+        <input class="button" type="reset" name="clear" id="clear" value="Clear">
+        </div>
+        <!-- <div class="bt">
+        <button>Send</button>
+        <button>Clear</button>
+    </div> -->
+    </form>
+</div>
+
+</body>
+</html>
